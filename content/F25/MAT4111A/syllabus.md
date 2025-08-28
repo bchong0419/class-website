@@ -4,12 +4,12 @@ layout: layouts/mat4111AF25.njk
 ---
 
 <h1>MAT 4111A: Putnam Preparation</h1>
-<h2>Fall 2025</h2>
-
+<p><i>(Last updated: {% currentBuildDate %})</i></p>
 <p>Welcome to "Putnam Preparation!"</p>
 
 <h2>Course Information</h2>
 <ul>
+  <li>Fall 2025</li>
   <li>In-person</li>
   <li>Mondays and Wednesdays</li>
   <li>Monday, August 25th&ndash;Monday, December 1st</li>
@@ -79,10 +79,6 @@ Visiting student hours is one of the best ways you can spend your time to suppor
   We will be discussing ideas and working on problems collaboratively in this class, so as such, attendance is required, and will be reflected your course grade. If you are unable to make it to class, you are encouraged to notify the instructor ahead of time to receive an alternative assignment in order to have the absence excused.
 </p>
 
-<h3>Make-up homework and exams</h3>
-<p>
-  You will be given opportunities to redo homework exercises and exam problems for full credit. In order to redo a problem, you will be asked to either re-submit a thorough answer-key writeup or create a video explaining your solution to other students in the class.
-</p>
 
 <h2>Academic Honesty and the Student Conduct Code</h2>
 <p>
