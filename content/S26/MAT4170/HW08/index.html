@@ -4,15 +4,16 @@ type: assignment
 number: 8
 courseNumber: MAT4170
 term: S26
-date: 2026-04-09
+date: 2026-04-10
 layout: layouts/hw.njk
-permalink: false
-eleventyExcludeFromCollections: true
 ---
 <h2>Goals</h2>
 <ul>
-  <li>Finish your final homework assignment! :)</li>
-  <li>[...]</li>
+  <li>Continue working on your blog post.</li>
+  <li>See why Burnside's Lemma works.</li>
+  <li>Practice with group actions.</li>
+  <li>Test your intuition.</li>
+  <li>See a fundamental theorem!</li>
 </ul>
 <!-- <h2>Change log</h2>
 <ul>
@@ -52,111 +53,100 @@ Tools and resources used: On Exercise 1, I used ChatGPT to help me figure out ho
 </details>
 
 <details open>
-  <summary>Exercise 2 [X]</summary>
+  <summary>Exercise 2 [1]</summary>
   <p>
-    [Discord]
+    Post on the <code>#hw-prompts</code> Discord with either (a) an "aha moment" you've had from the last few homework assignments, (b) a topic from class that you'd like to understand better, or (c) a topic you'd like to see on the final homework assignment (HW 9).
+  </p>
+</details>
+
+<details open>
+  <summary>
+    Exercise 3 [10]
+    <span style="font-size: small;">(Blog post)</span>
+  </summary>
+  <p>
+    Spend at least 100 minutes working on your blog post in markdown.
+    Save the markdown file as <code>blog_post.md</code> and include it in your LaTeX document with <code>\usepackage[settings]{markdown}</code>. (<a href="https://www.overleaf.com/learn/how-to/Writing_Markdown_in_LaTeX_Documents">You can read more about this here.</a>)
   </p>
 </details>
 
 
 <h2>Choice Exercises</h2>
-<p><i>Do 15 points of the following.</i></p>
-
-  <ol>
-    <li>
-      Watch the following 22-minute 3Blue1Brown video <a href="https://youtu.be/mH0oCDa74tE">Group theory, abstraction, and the 196,883-dimensional monster</a>. (The video gets into quite technical topics, and you are not expected to understand every detail.)
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/mH0oCDa74tE?si=7bnx49sNyoZXC9z3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </li>
-    <li>
-      Write 3&ndash;5+ sentences about what you feel curious about and/or confused about. Try to write down at least one question that you have after watching the video.
-    </li>
-  </ol>
+<p><i>Do 12 points of the following.</i></p>
 
 <details open>
   <summary>
-    Choice Exercise 3 []
-    <span style="font-size: small;">(reflection)</span>
+    Choice Exercise 4 [6]
+    <span style="font-size: small;">(video)</span>
   </summary>
   <p>
-    At the beginning of the term, I had you watch the 22-minute 3Blue1Brown video <a href="https://youtu.be/mH0oCDa74tE">Group theory, abstraction, and the 196,883-dimensional monster</a>. In this exercise you're going to watch it again.
+    The (52:11) video "Exploration & Epiphany" by Paul Dancstep on the 3Blue1Brown YouTube channel gives a nice explanation of why Burnside's Lemma works. Watch it, and write a few sentences about what made sense, what didn't, and anything you're curious about after watching the video.
   </p>
-  <ol>
-    <li>
-      Before you watch the video again, go look at your HW 0 Exercise 3 response and re-read it, and write down at least one though.
-    </li>
-    <li>Watch the video!
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/mH0oCDa74tE?si=7bnx49sNyoZXC9z3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </li>
-    <li>
-      While you watch the video, make a list of ideas from the video that you understand better after having taken this class <i>and</i> list ideas that you still don't fully understand.
-    </li>
-    <li>
-      Write a sentence or two reflecting on your learning experiences this term.
-    </li>
-  </ol>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_BrFKp-U8GI?si=TyHiqa4q6N5BpGFX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </details>
 
 <details open>
   <summary>
-    Choice Exercise 3 [≤5]
-    <span style="font-size: small;">(Exit interview)</span>
+    Choice Exercise 5 [4 + 3 + 3]
+    <span style="font-size: small;">(Group actions)</span>
   </summary>
   <p>
-    It's possible that you might ask me for a letter of recommendation in the future, but it might be in many months after you've forgotten a lot of your experiences. Write a bulleted list of work that you're proud of this term, ways you think you've been a good classmate or student, examples of ways in which you've flourished or grown, etc. (You get one point for every two items in your list, up to a maximum of five points.)
+    We defined a (left) group action of the group \((G,*)\) on the set \(X\) as a function \(\cdot\colon G \times X \to X\) such that for all \(x \in X\) and \(g_1, g_2 \in G\)
   </p>
-  <p>
-    (If you ask me to write you a letter in the future, reference this list.)
-  </p>
+  <ul>
+    <li>\(e \cdot x = x\), and</li>
+    <li>\(g_1 \cdot (g_2 \cdot x) = (g_1 * g_2) \cdot x\).</li>
+  </ul>
+  <ol>
+    <li>[4]
+      For each of the following subparts, give an example of a group \((G,*)\), a set \(X\), and a function \(\cdot\colon G \times X \to X\) such that
+      <ol>
+        <li>The function is a group action (i.e. it satisfies both of the above properties.)</li>
+        <li>The function satisfies the first property, but not the second.</li>
+        <li>The function satisfies the second property, but not the first.</li>
+        <li>The function satisfies neither property.</li>
+      </ol>
+    </li>
+    <li>[3]
+      Prove that if \( G \) is a group that acts on a set \( X \), then the set \[
+        H = \{g \in G \mid g \cdot x = x \text{ for all } x \in X\}
+      \] is a <em>normal subgroup</em> of \( G \).
+    </li>
+    <li>[3]
+      Let \( G = \mathbb{Z} \), \( X = (H, *) \), and \( h \in H \) be an element of \( H \). Prove that the map \(n \cdot h = h^n * h * h^{-n}\) is a group action.
+    </li>
+  </ol>
 </details>
 
 <details open>
-    <summary>
-    Choice Exercise X []
-    <span style="font-size: small;">(review/practice)</span>
+  <summary>
+    Choice Exercise 6 [≤11]
+    <span style="font-size: small;">(True/false)</span>
   </summary>
-  <p>
-    [...]
-  </p>
+  {% include 'content/S26/MAT4170/HW08/_choice_exercise_true_false.html' %}
 </details>
 
 <details open>
-    <summary>
-    Choice Exercise X []
-    <span style="font-size: small;">(programming)</span>
+  <summary>
+    Choice Exercise 7 [≤6]
+    <span style="font-size: small;">(self-study)</span>
   </summary>
-  <p>
-    [...]
-  </p>
+  <ol>
+    <li>[3]
+      Set a timer for 25 minutes and read an algebra text of your choosing, attempting problems/exercises along the way.
+    </li>
+    <li>[3]
+      After taking a break for at least five minutes, set another 25 minute timer and repeat.
+    </li>
+  </ol>
 </details>
 
 <details open>
-    <summary>
-    Choice Exercise X []
-    <span style="font-size: small;">(proof)</span>
+  <summary>
+    Choice Exercise 8 [4 + 4 + 4]
+    <span style="font-size: small;">(Fundamental Theorem of Finite Abelian Groups)</span>
   </summary>
-  <p>
-    [...]
-  </p>
-</details>
-
-<details open>
-    <summary>
-    Choice Exercise X []
-    <span style="font-size: small;">(video/self-study)</span>
-  </summary>
-  <p>
-    [...]
-  </p>
-</details>
-
-<details open>
-    <summary>
-    Choice Exercise X []
-    <span style="font-size: small;">(challenge)</span>
-  </summary>
-  <p>
-    [...]
-  </p>
+  {% include 'content/S26/MAT4170/HW08/_choice_exercise_abelian_group.html' %}
 </details>
 
 <details open>
